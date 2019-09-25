@@ -320,13 +320,6 @@ En esta ultima oportunidad lo que haremos sera simular una plataforma de voto el
   <img src="assets/images/flow-3.png" width="600">
 </p>
 
-
-### IBP 
-
-
------
-
-
 ### Ejecutar la aplicación
 
 
@@ -382,10 +375,10 @@ npm run serve
  Ya podemos ingresar a [https://localhost:8080](https://localhost:8080) para acceder a la plataforma de votación electrónica. 
 
 
- ### Registrarse en la red
+### Registrarse en la red
 
 
- Primero, necesitamos registrarnos como votantes y crear nuestro id con el cual enviaremos nuestro voto. Para hacer esto, necesitaremos ingresar un ID único (cedula de identidad) junto con nuestra credencial y nuestros nombres y apellidos (Para el propósito de esta demo cualquier valor ingresado es valido).
+ Primero, necesitamos registrarnos como votantes y crear nuestro id con el cual enviaremos nuestro voto. Para hacer esto, necesitaremos ingresar un ID único (cédula de identidad) junto con nuestra credencial y nuestros nombres y apellidos (Para el propósito de esta demo cualquier valor ingresado es valido).
 
 
 Si todo va bien, debería ver 

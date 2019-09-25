@@ -1,0 +1,47 @@
+{
+    "name": "mychannel",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "votermsp"
+    },
+    "organizations": {
+        "votermsp": {
+            "mspid": "votermsp",
+            "peers": [
+                "184.173.1.171:31327"
+            ],
+            "certificateAuthorities": [
+                "184.173.1.171:31833"
+            ]
+        }
+    },
+    "orderers": {
+        "184.173.1.171:31614": {
+            "url": "grpcs://184.173.1.171:31614",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICJzCCAc6gAwIBAgIUaOv+VtqnQrzHEccXTNOh/c1ESxYwCgYIKoZIzj0EAwIw\nZTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVy\nQ0EtdGxzMB4XDTE5MDkyNDEyNTgwMFoXDTM0MDkyMDEyNTgwMFowZTELMAkGA1UE\nBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBlcmxl\nZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVyQ0EtdGxzMFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAES34779z9ksqS0wjFG66TNEsEr+9PPZX3\n/Z+ARjWuW9pwWTPzjluJQSKMRO6Au++/2M1r2/aw4QXY2hcrtoJBiKNcMFowDgYD\nVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYEFNpPUB19\nVQXscnn8Im57+vOtCuXcMBUGA1UdEQQOMAyHBLitAauHBApMxOUwCgYIKoZIzj0E\nAwIDRwAwRAIgQ+gL+taCoYqrq31/UenRKWTNBCdQ0mYhQ7H/akL0EPwCIB8LgucF\n6OGnMlB83yzIk9q3XGRJ21GJma0pDc2GoQV+\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "184.173.1.171:31327": {
+            "url": "grpcs://184.173.1.171:31327",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUerdbtW6S+sHGG1dVK6d0UFKIpccwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtWb3RlckNB\nLXRsczAeFw0xOTA5MjQxMjUxMDBaFw0zNDA5MjAxMjUxMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLVm90ZXJDQS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAAR4z3luFlDWTzqZY3VYcAz4rk8QQSL+hD1p8hO5\nbMIRBZONqWRo0X+Tvg3rlxg+rrYOIhnXZIyBOel12+NHA9eMo1wwWjAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUfedBceFs3axa\nXLKfeUm+oMnN0n0wFQYDVR0RBA4wDIcEuK0Bq4cECkzE5TAKBggqhkjOPQQDAgNH\nADBEAiATRVsvaqrjHAWRn8bVRP3qx52bb87psFaYWRsCwaZS2wIgIWesnyumt0N9\nHEG46JLN+Wp4+ulJ90rpXfLq4SzPNUs=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "184.173.1.171"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "184.173.1.171:31833": {
+            "url": "https://184.173.1.171:31833",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\r\nMIICdzCCAeCgAwIBAgIJamXJMOt7jzhHMA0GCSqGSIb3DQEBBQUAMHMxFjAUBgNV\r\nBAMTDTE4NC4xNzMuMS4xNzExCzAJBgNVBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBD\r\nYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEMMAoGA1UEChMDSUJNMRMwEQYDVQQL\r\nEwpCbG9ja2NoYWluMB4XDTE5MDkyNDEyNTU0MFoXDTIwMDkyMzEyNTU0MFowczEW\r\nMBQGA1UEAxMNMTg0LjE3My4xLjE3MTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5v\r\ncnRoIENhcm9saW5hMRAwDgYDVQQHEwdSYWxlaWdoMQwwCgYDVQQKEwNJQk0xEzAR\r\nBgNVBAsTCkJsb2NrY2hhaW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFR\r\nrJGEgU4ryILmZ4rZ6hl5QROf7JzTPnIU6Yo3cpjDLnMp3cxJMl9zX1JFvj39/MKQ\r\n39tBvTR2Fej77isLxIV8oI75rCmLux8Ki/X2NvOZ23gy6/skZOOZuJvDLxpOMxIn\r\n+G/Vr14wiQqi/tGGlTYmQy0lVgsW0Hhgiz09YbonAgMBAAGjEzARMA8GA1UdEQQI\r\nMAaHBLitAaswDQYJKoZIhvcNAQEFBQADgYEAs9C/ERKimwDZWe5o+xFXbG4qDZ3W\r\n8mS8fuGVSWZ7fceKWld26spINEsAvy6WY1ZPqyZBn9hnPjOC8C6kXcbA0BSv/zGA\r\nyX0Q2+anLKH+uWCz7+5udm+qHe2Cx6DeluFF861jzyOWMWdnEtmuNbFpo9q42Mbz\r\nkljo50Zfjf0SjzI=\r\n-----END CERTIFICATE-----\r\n"
+            }
+        }
+    }
+}

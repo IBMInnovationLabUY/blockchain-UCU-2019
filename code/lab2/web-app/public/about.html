@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Programa de fidelización de clientes</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/home">Programa de fidelización de clientes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+      </ul>
+
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="/about">Conocer más</a>
+        </li>
+
+        <li class="nav-item text-nowrap dropdown">
+          <a class="nav-link dropdown-toggle " href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingresar</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="/member">Miembro</a>
+            <a class="dropdown-item" href="/partner">Partner</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Programa de fidelización de clientes</h1>
+      <h4></h4>
+      <p>Esta aplicacion web es una demo de un programa de fidelización de clientes con <b>blockchain</b> usando <b>Hyperledger Composer API</b></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <br>  
+        <p> Un programa de fidelización de clientes permite a las empresas recompensar a los clientes que realizan compras con frecuencia. Los miembros del programa pueden ganar puntos en compras, lo que puede traducirse en algún tipo de recompensa, como descuentos, obsequios o tratamientos especiales para clientes.
+          Los miembros trabajan para obtener una cierta cantidad de puntos para canjear su recompensa. Estos programas pueden tener múltiples compañías como socios en el programa, para atender a una base de clientes. Sin embargo, los sistemas actuales de programas de fidelización son restricciones en las relaciones.
+          entre socios y con visibilidad para los miembros. Estas restricciones se pueden eliminar creando el programa de fidelización del cliente en una red blockchain.
+          <br> <br> Este modelo de blockchain para un programa de fidelización de clientes mejora el valor de los puntos para los miembros del programa de fidelización y aporta un nuevo valor a los socios mediante la creación de transacciones de confianza. Los participantes en esta red tienen una relación más nivelada
+          entre sí y los puntos están en una posición céntrica para conectar a todos los participantes.
+          <br> <br> En este patrón de código, crearemos un programa de fidelización de clientes como una aplicación web de blockchain utilizando Hyperledger Composer API y Node.js. La aplicación permitirá a los miembros registrarse en la red donde crearán su cuenta.
+          Se identificarán en la red con su número de cuenta y crearán una clave de acceso que utilizarán para iniciar sesión. Esta clave de acceso se utiliza como la identificación de la tarjeta para que el miembro realice transacciones y consulte registros. El miembro una vez firmado
+          en, puede realizar transacciones para ganar puntos y canjear puntos de los socios en la red. Pueden ver sus transacciones como parte del libro mayor de blockchain. Este patrón de código ilustra el uso de permisos como parte de la red donde un
+          el miembro solo puede ver sus transacciones.
+          <br> <br> De manera similar para el socio, se registrarán creando una identidad en la red y una clave de acceso que se utilizará para ver sus registros. Los socios pueden ver solo las transacciones de las que formaron parte y, por lo tanto, pueden realizar un seguimiento
+          de todas sus transacciones donde asignaron o canjearon puntos. La aplicación web muestra un panel básico para el socio que muestra los puntos totales que han asignado y canjeado a los miembros. A medida que las transacciones se vuelven complejas, el socio
+          puede realizar análisis en sus transacciones para crear paneles informativos.
+        </p>
+      <br>
+      <hr class="featurette-divider">
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
